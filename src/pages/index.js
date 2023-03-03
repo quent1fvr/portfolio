@@ -7,6 +7,7 @@ import About from 'components/About';
 import Skills from 'components/Skills';
 import Projects from 'components/Projects';
 import Contact from 'components/Contact';
+import ErrorBoundary from '../components/ErrorBoundary'
 
 
 export default function Home() {
@@ -18,12 +19,14 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <ErrorBoundary>
       <Main />
       <About />
       <Skills /> 
       <Projects />
       <Contact/>
-      
+      </ErrorBoundary>
+
     </div>
   )
 }
