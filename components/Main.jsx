@@ -1,7 +1,6 @@
 import React from 'react'
 import { AiOutlineMail } from 'react-icons/ai'
-import { BsFillPersonFill } from 'react-icons/bs'
-import { FaGithub, FaLinkedin, FaLinkedinIn } from 'react-icons/fa'
+import { FaGithub, FaLinkedinIn } from 'react-icons/fa'
 import "react-tooltip/dist/react-tooltip.css";
 import { Tooltip as ReactTooltip } from "react-tooltip";
 

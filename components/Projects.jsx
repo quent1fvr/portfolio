@@ -1,6 +1,5 @@
 import React from 'react'
-import Image from 'next/image'
-import Link from 'next/link'
+
 import drone_detection  from '../public/assets/projects/drone.jpeg'
 import engines_failure from '../public/assets/projects/engines.jpeg'
 import dav from '../public/assets/projects/dav.png'

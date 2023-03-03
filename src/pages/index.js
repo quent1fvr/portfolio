@@ -1,7 +1,4 @@
 import Head from 'next/head'
-import {BsFillMoonStarsFill} from 'react-icons/bs'
-import {AiFillLinkedin,AiFillTwitterCircle} from 'react-icons/ai'
-import Image  from 'next/image'
 import Main from 'components/Main';
 import About from 'components/About';
 import Skills from 'components/Skills';
