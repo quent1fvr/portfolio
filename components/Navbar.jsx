@@ -64,7 +64,7 @@ import {useRouter} from 'next/router';
         >
             <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
 
-                <Image src='/../public/assets/logo_website.png' alt='/' width='80' height = '25' />
+                <Image src='/../public/assets/logo_website.png' alt='/' width='75' height = '40' />
                 <div>
                     <ul style={{color: `${linkColor}`}} className="hidden md:flex">
                         <Link href='/'>
@@ -83,9 +83,9 @@ import {useRouter} from 'next/router';
                             <li className="ml-10 text-sm uppercase hover:border-b">Contact</li>
                         </Link>  
                         
-                        <Link href='/cv.pdf' download target="_blank">
+                        <a href='cv.pdf' download target="_blank">
                             <li className="ml-10 text-sm uppercase hover:border-b">Resume</li>
-                        </Link>  
+                        </a>  
 
 
                     </ul>
@@ -134,7 +134,8 @@ import {useRouter} from 'next/router';
                         <Link href='/#contact'>
                         <li onClick={()=> setNav(false)} className = "py-4 text-sm"> Contact</li>
                         </Link> 
-                        <Link href='/cv.pdf' download target="_blank">
+
+                        <Link href='cv.pdf' download target="_blank">
                         <li onClick={()=> setNav(false)} className = "py-4 text-sm">Resume</li>
                         </Link> 
                     </ul>
