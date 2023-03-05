@@ -22,10 +22,13 @@ import {useRouter} from 'next/router';
 
     useEffect (()=>{
         if (
-            router.asPath === '/Drone_detection' ||
+            router.asPath === '/Drone_detection.jsx' ||
             router.asPath === '/Engine_failure_prediction' ||
-            router.asPath === '/DAV' ||
-            router.asPath === '/operation_research_nutrition'
+            router.asPath === 'src/pages/DAV.jsx' ||
+            router.asPath === '/src/pages/operation_research_nutrition.jsx' ||
+            router.asPath === '/src/pages/AICAP_internship.jsx' ||
+            router.asPath === '/operation_research_nutrition' 
+
 
         ){
             setNavBg('transparent')
@@ -60,7 +63,8 @@ import {useRouter} from 'next/router';
              }
         >
             <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
-                <Image src='/../public/assets/navLogo.png' alt='/' width='100' height = '50' />
+
+                <Image src='/../public/assets/logo_website.png' alt='/' width='80' height = '25' />
                 <div>
                     <ul style={{color: `${linkColor}`}} className="hidden md:flex">
                         <Link href='/'>
@@ -102,7 +106,7 @@ import {useRouter} from 'next/router';
                     <div>
                         <div className="flex w-full items-center justify-between">
                             <Link href={'/'}> 
-                            <Image src='/../public/assets/navLogo.png' width='87' height='35' alt='/'/>
+                            <Image src='/../public/assets/logo_website.png' width='87' height='35' alt='/'/>
                             </Link>
                             <div onClick = {handleNav} className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer">
                             <AiOutlineClose />

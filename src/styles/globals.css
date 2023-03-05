@@ -29,7 +29,7 @@ a {
 
 @layer base {
   body{
-    @apply bg-[#ecf0ecf3] text-[#1f2937] tracking-wide
+    @apply bg-[rgba(245,245,247,0.95)] text-[#1f2937] tracking-wide
   }
     h1,h2,h3,h4,h5 {
       @apply font-bold

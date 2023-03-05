@@ -1,8 +1,12 @@
 import React from 'react';
 import Image from 'next/image';
 import drone_image from '/public/assets/projects/drone.jpeg'
+import VGG_result from 'public/assets/projects/VGG_result.png'
+import YOLO_result from 'public/assets/projects/YOLO_result.png'
+
 import {RiRadioButtonFill} from 'react-icons/ri'
 import Link from 'next/link';
+
 
 const Drone_detection = () => {
   return (
@@ -16,13 +20,41 @@ const Drone_detection = () => {
                 </div>
             </div>
                 <div className='max-w-[1240px] mx-auto p-2 grid md:grid-cols-5 gap-8 pt-8'>
-                <div className='col-span-4'>
-                    <p>Project</p>
-                    <h2>Overview</h2>
-                    <p>THIS Project aims to detect drones and compare methods 
-                        gkqOGQRNEZÙKB PERUGHIEPJOK BNJRQGIEJOQ MKÙ</p>
-                    <button className='px-8 py-2 mt-4 mr-8'>Demo</button>
-                    <button className='px-8 py-2 mt-4 '>Code</button>
+                <div className='col-span-4 '>
+                    <h2 className='py-8'>Overview</h2>
+                    
+                    <p className='text-justify'>I have been given a small dataset of images containing UAVs, along with labels 
+                        specifying parameters for bounding box regression. As the dataset is too small
+                         to train an object detector from scratch, my goal was to
+                         fine-tune a pre-trained deep neural network to detect the position of UAVs in the images.
+                    </p>
+
+                    <h2 className='py-8'> First appoach VGG 16</h2>
+                    <p className='text-justify'>
+                         When transfer learning with VGG16, we will use the basic layers of VGG16 that are common to all images (such as filters for shape and texture features),
+                          while adding new layers that are specific to drone recognition. We will then train this new model on a dataset including drone images so that it can learn to recognize these objects. 
+                          This approach will allow us to take advantage of the power of VGG16 while adding new features for drone recognition.
+                    </p>
+                    <div className='flex justify-center items-center py-8'> 
+                    <Image   src={VGG_result} alt='/' />
+                    </div>
+                    <h2 className='py-8'> Second  appoach YOLOV7 </h2>
+                        
+                    <p className='text-justify'> The advantage of YOLOv7 for drone recognition is its speed and accuracy. It can detect objects quickly and with very good accuracy, 
+                    making it an ideal choice for real-time applications. In addition, by using deep learning,
+                     YOLOv7 can adapt to different lighting conditions and drone shapes and sizes, further enhancing its suitability for this task.</p>
+                     <div className='flex justify-center items-center py-8'> 
+
+                     <Image src={YOLO_result} alt='/' />
+                    </div>
+                     <div className="flex justify-center items-center">
+                    <a href="https://github.com/quent1fvr/Drone_detection" target="_blank" rel="noopener noreferrer">
+                    <button className='px-8 py-2 mt-4 mr-4'>Code</button>
+                    </a>
+                    <Link href='../S383387DL.pdf' download target="_blank">
+                    <button className='px-8 py-2 mt-4 ml-4 '>Download Report</button>
+                    </Link>
+                    </div>
                 </div>
                 <div className='col-span-4 md:col-span-1 shadow-xl rounded-xl p-4'>
             <div className='p-2'>

@@ -1,10 +1,12 @@
 import React from 'react'
 import Image from 'next/image'
 import { AiOutlineMail } from 'react-icons/ai'
-import { BsFillPersonFill } from 'react-icons/bs'
 import { FaGithub, FaLinkedin, FaLinkedinIn } from 'react-icons/fa'
 import {HiOutlineChevronDoubleUp} from 'react-icons/hi'
 import Link from 'next/link'
+
+import "react-tooltip/dist/react-tooltip.css";
+import { Tooltip as ReactTooltip } from "react-tooltip";
 
 const Contact = () => {
   return (
@@ -31,18 +33,23 @@ const Contact = () => {
  <div>
     <p className='uppercase pt-8' >Connect With me</p>
     <div className='flex items-center justify-between py-4'>
-    <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
-                            <FaLinkedinIn/>
-                        </div>
-                        <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
-                            <FaGithub/>
-                        </div>
-                        <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
-                            <AiOutlineMail/>
-                        </div>
-                        <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
-                            <BsFillPersonFill/>
-                        </div>        
+        <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
+            <a href="https://www.linkedin.com/in/quentin-fever-7866001bb/" target="_blank" rel="noopener noreferrer">
+                <FaLinkedinIn/>
+            </a>
+        </div>
+        <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
+            <a href="https://github.com/quent1fvr" target="_blank" rel="noopener noreferrer">
+                <FaGithub/>
+            </a>
+        </div>
+        <div id ="mail" className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
+            <AiOutlineMail/>
+
+
+        </div>
+        <ReactTooltip anchorId='mail' place="bottom" content="quentinfever@icloud.com"/>
+
     </div>
  </div>   
 </div>

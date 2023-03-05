@@ -9,21 +9,17 @@ const Main =()=>{
         <div id = "home" className='w-full h-screen text-center'>
             <div className='maw-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center'>
                 <div>
-                    <p className='uppercase text-sm tracking-widest text-gray-700 '>vive la france
+                    <p className='uppercase text-sm tracking-widest text-gray-700 '>Let's build something together
                     </p>
                     <h1 className='py-4 text-gray-700'>
                     Hi, Im  <span className='text-teal-600 '>Quentin</span>
-                    </h1>
+                    </h1> 
                     <h1 className='py-2 text-gray-700'>
                      Machine Learning Engineer / Data Scientist / Quantitative analyst
                     </h1>
                     <p className='py-4 text-gray-600 max-w-[70%] m-auto'>
-                    I am a junior machine learning engineer. I have a Masters degree in Computer Science in France and a
-                     master of Science in Artificial Intelligence in the UK and have completed various machine learning and data science courses. I have experience with several programming languages such as
-                  Python,Java, C++ and I am proficient in using various machine learning libraries and frameworks such as TensorFlow, Keras, Pytorch,
-                  Pycaret and Scikit-learn. I am also familiar with big data technologies such as Hadoop and Spark.
-                  My portfolio includes projects such as image classification, natural language processing, and predictive modeling. 
-                  I am excited to continue learning and expanding my skillset in the field of machine learning
+                    I am a French student in Master of Science Applied Artificial Intelligence at Cranfield University in the UK. I am here in double degree with my French engineering school (equivalent Msc). I will graduate in August 2023 and I am listening to any proposal worldwide. 
+        I have experience with several programming languages such as Python,Java, C++ and I am proficient in using various machine learning libraries and frameworks such as TensorFlow, Keras, Pytorch, Pycaret and Scikit-learn.I am excited to continue learning and expanding my skillset in any sector of activity.
                     </p>
                     <div className='flex items-center justify-between max-w-[330px] m-auto py-4'>
                         <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
