@@ -5,6 +5,7 @@ import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
 import {FaGithub, FaLinkedinIn} from "react-icons/fa"
 import { BsPersonLinesFill } from "react-icons/bs";
 import {useRouter} from 'next/router';
+import logo from "public/assets/logo_website.png"
 
 
 
@@ -64,7 +65,7 @@ import {useRouter} from 'next/router';
         >
             <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
 
-                <Image src='/../public/assets/logo_website.png' alt='/' width='75' height = '40' />
+                <Image src={logo} alt='/' width='75' height = '40' />
                 <div>
                     <ul style={{color: `${linkColor}`}} className="hidden md:flex">
                         <Link href='/'>
@@ -106,7 +107,7 @@ import {useRouter} from 'next/router';
                     <div>
                         <div className="flex w-full items-center justify-between">
                             <Link href={'/'}> 
-                            <Image src='/../public/assets/logo_website.png' width='87' height='35' alt='/'/>
+                            <Image src={logo} width='87' height='35' alt='/'/>
                             </Link>
                             <div onClick = {handleNav} className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer">
                             <AiOutlineClose />

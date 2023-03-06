@@ -1,6 +1,13 @@
 import React from 'react'
 import Image from 'next/image'
-
+import python from "public/assets/skills/python.png"
+import scikit from "public/assets/skills/2560px-Scikit_learn_logo_small.svg.png"
+import pytorch from "public/assets/skills/pytorch-logo.png"
+import tensorflow from "public/assets/skills/tensorflow.png"
+import tableau from "public/assets/skills/Tableau-Logo.png"
+import nextjs  from "public/assets/skills/800px-Nextjs-logo.svg.png"
+import Snowflake  from "public/assets/skills/Snowflake_Logo.svg.png"
+import Mysql  from "public/assets/skills/MySQL-Logo.png"
 function Skills() {
   return (
 
@@ -15,7 +22,7 @@ function Skills() {
                 <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
                     <div className='grid grid-cols-2 gap-4 justify-center items-center'> 
                         <div className='m-auto'>
-                            <Image src='/../public/assets/skills/python.png' width='64' height='64' alt='/' />
+                            <Image src={python} width='64' height='64' alt='/' />
                         </div>
                         <div className='flex flex-col items-center justify-center'>
                             <h3>PYTHON</h3>
@@ -25,7 +32,7 @@ function Skills() {
                 <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
                     <div className='grid grid-cols-2 gap-4 justify-center items-center'> 
                         <div className='m-auto'>
-                            <Image src='/../public/assets/skills/2560px-Scikit_learn_logo_small.svg.png' width='64' height='64' alt='/' />
+                            <Image src={scikit} width='64' height='64' alt='/' />
                         </div>
                         <div className='flex flex-col items-center justify-center'>
                             <h3>SCIKIT LEARN</h3>
@@ -35,7 +42,7 @@ function Skills() {
                 <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
                     <div className='grid grid-cols-2 gap-4 justify-center items-center'> 
                         <div className='m-auto'>
-                            <Image src='/../public/assets/skills/pytorch-logo.png' width='64' height='64' alt='/' />
+                            <Image src={pytorch} width='64' height='64' alt='/' />
                         </div>
                         <div className='flex flex-col items-center justify-center'>
                             <h3>PYTORCH</h3>
@@ -45,7 +52,7 @@ function Skills() {
                 <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
                     <div className='grid grid-cols-2 gap-4 justify-center items-center'> 
                         <div className='m-auto'>
-                            <Image src='/../public/assets/skills/tensorflow.png' width='64' height='64' alt='/' />
+                            <Image src={tensorflow} width='64' height='64' alt='/' />
                         </div>
                         <div className='flex flex-col items-center justify-center'>
                             <h3>TENSORFLOW</h3>
@@ -55,7 +62,7 @@ function Skills() {
                 <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
                     <div className='grid grid-cols-2 gap-4 justify-center items-center'> 
                         <div className='m-auto'>
-                            <Image src='/../public/assets/skills/Tableau-Logo.png' width='64' height='64' alt='/' />
+                            <Image src={tableau} width='64' height='64' alt='/' />
                         </div>
                         <div className='flex flex-col items-center justify-center'>
                             <h3>TABLEAU SOFTWARE</h3>
@@ -65,7 +72,7 @@ function Skills() {
                 <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
                     <div className='grid grid-cols-2 gap-4 justify-center items-center'> 
                         <div className='m-auto'>
-                            <Image src='/../public/assets/skills/800px-Nextjs-logo.svg.png' width='64' height='64' alt='/' />
+                            <Image src={nextjs} width='64' height='64' alt='/' />
                         </div>
                         <div className='flex flex-col items-center justify-center'>
                             <h3>NEXT JS</h3>
@@ -75,7 +82,7 @@ function Skills() {
                 <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
                     <div className='grid grid-cols-2 gap-4 justify-center items-center'> 
                         <div className='m-auto'>
-                            <Image src='/../public/assets/skills/Snowflake_Logo.svg.png' width='64' height='64' alt='/' />
+                            <Image src={Snowflake} width='64' height='64' alt='/' />
                         </div>
                         <div className='flex flex-col items-center justify-center'>
                             <h3>SNOWFLAKE</h3>
@@ -85,7 +92,7 @@ function Skills() {
                 <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
                     <div className='grid grid-cols-2 gap-4 justify-center items-center'> 
                         <div className='m-auto'>
-                            <Image src='/../public/assets/skills/MySQL-Logo.png' width='64' height='64' alt='/' />
+                            <Image src={Mysql} width='64' height='64' alt='/' />
                         </div>
                         <div className='flex flex-col items-center justify-center'>
                             <h3>MYSQL</h3>
