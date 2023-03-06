@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 const About = () => {
   return (
-    <div id = "about" className='w-full mx-auto md:h-screen p-2 flex items-center '>
+    <div id = "about" className='w-full  md:h-screen p-2 flex items-center py-16'>
         <div className='max-w-[1240px] mx-auto md:grid grid-cols-3 gap-8 ' >
             <div className='col-span-2 '>
                 <p className='uppercase text-xl tracking-widest text-[#5651e5] '>
@@ -15,7 +15,7 @@ const About = () => {
                 <p className='py-2 text-gray-600'>
                     
                 </p>
-                <p className=' py-2 text-gray-600'>
+                <p className=' py-2 text-gray-600 text-justify'>
                 Coming from the north of France, I am someone who loves to adapt to new environments.
                  My internship in Spain in May 2021 and my year in the UK in 
                 2022/2023 have allowed me to open up to the world.
