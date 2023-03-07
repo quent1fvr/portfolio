@@ -84,7 +84,7 @@ import logo from "public/assets/logo_website.png"
                             <li className="ml-10 text-sm uppercase hover:border-b">Contact</li>
                         </Link>  
                         
-                        <a href='cv.pdf' download target="_blank">
+                        <a href='Quentin_Fever_-_Data_Scientist_Junior_.pdf' download target="_blank">
                             <li className="ml-10 text-sm uppercase hover:border-b">Resume</li>
                         </a>  
 
@@ -136,7 +136,7 @@ import logo from "public/assets/logo_website.png"
                         <li onClick={()=> setNav(false)} className = "py-4 text-sm"> Contact</li>
                         </Link> 
 
-                        <Link href='cv.pdf' download target="_blank">
+                        <Link href='Quentin_Fever_-_Data_Scientist_Junior_.pdf' download target="_blank">
                         <li onClick={()=> setNav(false)} className = "py-4 text-sm">Resume</li>
                         </Link> 
                     </ul>
