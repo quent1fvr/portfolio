@@ -2,7 +2,7 @@
 import Navbar from "components/Navbar";
 
 import "../styles/globals.css";
-
+import {Analytics} from '@vercel/analytics'
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -10,6 +10,7 @@ function MyApp({ Component, pageProps }) {
         <Navbar/>
 
     <Component {...pageProps} />
+    <Analytics/>
   </> 
   );
 }
