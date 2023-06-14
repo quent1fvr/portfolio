@@ -6,6 +6,9 @@ import dav from 'public/assets/projects/airline_traffic.jpeg'
 import nutrition from 'public/assets/projects/perfect_meall.jpeg'
 import ProjectItem from './ProjectItem'
 import Japhy from  'public/assets/projects/japhyy.png'
+import Thales from  'public/assets/projects/Thales/Thales_Logo.svg.png'
+import CovidDetection from  'public/assets/projects/COVID/covid.jpeg'
+
 import PoseEstimation from 'public/vitpose.png'
 import aicap from 'public/logo nuevo aicap texto azul.png'
 import worldAid from 'public/assets/projects/international_aidd.jpeg'
@@ -16,6 +19,12 @@ function Projects() {
             <p className='text-xl tracking-widest uppercase text-[#5651e5]'> Internships / Projects</p>
             <h2 className='py-4'>What I have Built up</h2>
             <div className='grid md:grid-cols-2 gap-8'>
+            <ProjectItem
+                    title='Thesis with Thales'
+                    techno = "Reinforcement learning, pytorch, jupyter"
+                    backgroundImg = {Thales}
+                    projectUrl="/Thales_internship"
+                 />   
             <ProjectItem
                     title='Internship Data Analyst Japhy'
                     techno = "MySQL, Tableau Desktop,Snowflake, Excel"
@@ -40,7 +49,14 @@ function Projects() {
                     projectUrl="/Drone_detection"
                     techno = "Tensorflow / Pytorch / YOLOV7/ VGG16 transfer learning"
 
-                 />                 
+                 />             
+                <ProjectItem
+                    title='Covid prediction based on scanner sequences'
+                    backgroundImg = {CovidDetection}
+                    projectUrl="/Covid_prediction"
+                    techno = "Tensorflow / Python / CNN networks"
+
+                 />                       
                 <ProjectItem
                     title='Engine failure prediction '
                     backgroundImg = {engines_failure}

@@ -28,10 +28,17 @@ autonomous machines, and human operators are often working alongside robots in p
 environments.
 The group project  was to design, implement and test a system for the surveillance system (detection of multiple humans 
 and related events) in a smart airport scenario. </p>
-<p className='underline'>My team and I have decided to work on the development end to end of real time agressive behaviours detection </p>
+<p>My team and I have decided to work on the development end to end of real time agressive behaviours detection </p>
+<p className='underline'>For more information, I recommend you download the research paper we published at the end of this project.  </p>
 
-<p className='py-8'>This project is currently in progress until April 11, the progress of the project is available on github. Details on this site will be provided once the project is completed.</p>
-
+<div className="flex justify-center items-center">
+                    <a href="https://github.com/Asami-1/GDP" target="_blank" rel="noopener noreferrer">
+                    <button className='px-8 py-2 mt-4 mr-4'>Code</button>
+                    </a>
+                    <Link href='../IEEE_Paper-v9.pdf' download target="_blank">
+                    <button className='px-8 py-2 mt-4 ml-4 '>Submitted Paper</button>
+                    </Link>
+                    </div>
                 </div>
                 <div className='col-span-4 md:col-span-1 shadow-xl rounded-xl p-4'>
             <div className='p-2'>
